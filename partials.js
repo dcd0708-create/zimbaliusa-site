@@ -85,6 +85,13 @@ const footerHtml = `
         <a href="${resolve('/menus.html')}">Menus</a>
       </div>
       <div class="footer-col">
+        <p class="footer-heading">Service Areas</p>
+        <a href="${resolve('/private-chef/siesta-key.html')}">Siesta Key</a>
+        <a href="${resolve('/private-chef/longboat-key.html')}">Longboat Key</a>
+        <a href="${resolve('/private-chef/anna-maria-island.html')}">Anna Maria Island</a>
+        <a href="${resolve('/private-chef/lakewood-ranch.html')}">Lakewood Ranch</a>
+      </div>
+      <div class="footer-col">
         <p class="footer-heading">Chef Alecia</p>
         <a href="${resolve('/about.html')}">About</a>
         <a href="${resolve('/press.html')}">Press</a>

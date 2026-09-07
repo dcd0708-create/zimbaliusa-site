@@ -2,16 +2,30 @@
 <html lang="en" data-theme="light" data-page="home">
 <head>
 <meta charset="utf-8" />
+<meta name="theme-color" content="#241911" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Zimbali USA | Live Jamaican Cooking Show &amp; Private Chef, Sarasota</title>
+<meta name="geo.region" content="US-FL" />
+<meta name="geo.placename" content="Sarasota" />
+<meta name="geo.position" content="27.3364;-82.5307" />
+<meta name="ICBM" content="27.3364, -82.5307" />
 <meta name="description" content="Chef Alecia Swainbank cooks a five-course Jamaican dinner in front of your guests. Twenty years in Negril. Now in Sarasota." />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
 <link rel="canonical" href="https://zimbaliusa.com/" />
 <meta property="og:title" content="Zimbali USA — Chef Alecia Swainbank" />
 <meta property="og:description" content="A live Jamaican cooking show in your kitchen. Five courses, twenty years in Negril, now in Sarasota." />
-<meta property="og:image" content="images/hero-alecia-plating.jpg" />
+<meta property="og:image" content="https://zimbaliusa.com/images/hero-alecia-plating.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="800" />
+<meta property="og:image:alt" content="Chef Alecia Swainbank cooking a five-course Jamaican dinner" />
 <meta property="og:type" content="website" />
+<meta property="og:site_name" content="Zimbali USA" />
+<meta property="og:locale" content="en_US" />
 <meta property="og:url" content="https://zimbaliusa.com/" />
 <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://zimbaliusa.com/images/hero-alecia-plating.jpg" />
+<meta name="twitter:title" content="Zimbali USA — Chef Alecia Swainbank" />
+<meta name="twitter:description" content="Live Jamaican cooking show in your Sarasota home. Five courses, twenty years in Negril." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="preload" as="image" href="images/hero-alecia-plating.jpg" fetchpriority="high" />
@@ -26,22 +40,75 @@
       "@type": "LocalBusiness",
       "@id": "https://zimbaliusa.com/#business",
       "name": "Zimbali USA — Chef Alecia Swainbank",
+      "alternateName": "Zimbali USA",
       "url": "https://zimbaliusa.com/",
       "email": "alecia@zimbaliusa.com",
-      "description": "Private chef and live Jamaican cooking shows in the Sarasota area.",
+      "image": "https://zimbaliusa.com/images/hero-alecia-plating.jpg",
+      "description": "Chef Alecia Swainbank cooks a five-course Jamaican dinner in front of your guests. Twenty years running Zimbali Retreats in Negril, now serving Sarasota, Bradenton, Siesta Key, and the Florida Gulf Coast.",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Sarasota",
         "addressRegion": "FL",
-        "addressCountry": "US"
+        "postalCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 27.3364,
+        "longitude": -82.5307
       },
       "areaServed": [
-        "Sarasota, FL", "Bradenton, FL", "Siesta Key, FL", "Longboat Key, FL",
-        "Lido Key, FL", "Anna Maria Island, FL", "Lakewood Ranch, FL",
-        "Venice, FL", "Osprey, FL", "Nokomis, FL", "Palmetto, FL"
+        { "@type": "City", "name": "Sarasota, FL" },
+        { "@type": "City", "name": "Bradenton, FL" },
+        { "@type": "City", "name": "Siesta Key, FL" },
+        { "@type": "City", "name": "Longboat Key, FL" },
+        { "@type": "City", "name": "Lido Key, FL" },
+        { "@type": "City", "name": "Anna Maria Island, FL" },
+        { "@type": "City", "name": "Lakewood Ranch, FL" },
+        { "@type": "City", "name": "Venice, FL" },
+        { "@type": "City", "name": "Osprey, FL" },
+        { "@type": "City", "name": "Nokomis, FL" },
+        { "@type": "City", "name": "Palmetto, FL" }
       ],
       "priceRange": "$$$",
+      "servesCuisine": ["Jamaican", "Caribbean"],
       "founder": { "@id": "https://zimbaliusa.com/about#chef" },
+      "sameAs": [
+        "https://www.instagram.com/zimbaliretreats/",
+        "https://www.facebook.com/zimbaliretreatsjamaica"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Zimbali USA Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Live Jamaican Cooking Show",
+              "url": "https://zimbaliusa.com/cooking-show",
+              "description": "Five-course Jamaican dinner cooked in front of your guests, with a fruit flambé finish."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Private Chef Service",
+              "url": "https://zimbaliusa.com/private-chef",
+              "description": "Chef Alecia cooks in your kitchen and serves you. Dinner parties, anniversaries, and full-week vacation meal plans."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Hands-On Jamaican Cooking Class",
+              "url": "https://zimbaliusa.com/cooking-classes",
+              "description": "Three-course lunch cooked with you in your kitchen. Crack a coconut, press fresh juice. $150 per guest, up to ten guests."
+            }
+          }
+        ]
+      },
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.8",
@@ -53,7 +120,10 @@
       "@type": "Person",
       "@id": "https://zimbaliusa.com/about#chef",
       "name": "Alecia Swainbank",
+      "givenName": "Alecia",
+      "familyName": "Swainbank",
       "jobTitle": "Chef and author",
+      "image": "https://zimbaliusa.com/images/hero-alecia-plating.jpg",
       "worksFor": { "@id": "https://zimbaliusa.com/#business" },
       "sameAs": [
         "https://www.instagram.com/zimbaliretreats/",
@@ -61,6 +131,69 @@
         "https://www.amazon.com/Forgotten-Wisdoms-Ancient-African-Traditions/dp/B0F2YD5M5Q",
         "https://forgottenwisdoms.com/"
       ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://zimbaliusa.com/#website",
+      "url": "https://zimbaliusa.com/",
+      "name": "Zimbali USA",
+      "publisher": { "@id": "https://zimbaliusa.com/#business" }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the live cooking show?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Chef Alecia cooks a five-course Jamaican dinner in front of your guests over about three hours, ending with fruit flambé lit at the table. She talks the whole way through — where each dish comes from, why it's made that way — and by the end guests are usually at the counter with a spoon in hand. Two guests or thirty. From $200 per guest, $1,200 minimum booking."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What areas does Chef Alecia serve?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sarasota, Bradenton, Siesta Key, Longboat Key, Lido Key, Anna Maria Island, Lakewood Ranch, Venice, Osprey, Nokomis, and Palmetto. Free travel within 25 miles of Sarasota; free anywhere in Florida for parties of ten or more."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does a private chef dinner cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "One evening: $150 per guest for 2-12 guests ($600 minimum), $200 per guest for 13-20 guests. Three nights or more: $125 per guest per night (2-12 guests) or $150 per guest per night (13-20). Add breakfast $45/guest, add lunch $40/guest. All food and fresh-pressed juices included."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you accommodate dietary restrictions?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Vegan, vegetarian, gluten-free and allergy guests are welcome and well taken care of — at no extra charge, and with no separate menu to ask for. Chef Alecia did this for two decades for tables of thirty; it is not an afterthought."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I book a date?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Fill out the inquiry form on the site. Chef Alecia (or Mark) will come back within one business day with a menu and quote. 30% deposit holds your date. Balance due 48 hours before. Full refund up to seven days out. Short-notice bookings (inside one week) are paid in full at booking and are non-refundable."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What about curried goat?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Available by request at additional cost. It takes four hours and it's worth it."
+      }
     }
   ]
 }
@@ -325,6 +458,10 @@
       </ul>
     </div>
     <form class="book-form" novalidate>
+      <div style="position:absolute;left:-9999px;height:0;overflow:hidden" aria-hidden="true">
+        <label for="f-website-hp">Website (leave blank)</label>
+        <input id="f-website-hp" name="website" type="text" tabindex="-1" autocomplete="off" />
+      </div>
       <div class="field field-half">
         <label for="f-name">Name<span aria-hidden="true">*</span></label>
         <input id="f-name" name="name" type="text" autocomplete="name" required />

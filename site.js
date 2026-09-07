@@ -25,19 +25,63 @@ if (toggle && mobileNav) {
   );
 }
 
-// Prevent double-submission on the inquiry form (front-end stub for the preview)
+// Booking-inquiry form → POST to /api/contact (Cloudflare Worker → Resend → alecia@zimbaliusa.com)
 const form = document.querySelector('.book-form');
 if (form) {
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const btn = form.querySelector('button[type="submit"]');
+    const original = btn ? btn.textContent : '';
+
+    // Clear old status
+    const oldStatus = form.querySelector('.form-status');
+    if (oldStatus) oldStatus.remove();
+
     if (btn) {
       btn.disabled = true;
-      btn.textContent = 'Preview mode — form not wired yet';
-      setTimeout(() => {
+      btn.textContent = 'Sending…';
+    }
+
+    const fd = new FormData(form);
+    const data = Object.fromEntries(fd.entries());
+    data.flexible = fd.get('flexible') === 'on';
+
+    const showStatus = (msg, kind) => {
+      const p = document.createElement('p');
+      p.className = `form-status form-status--${kind}`;
+      p.setAttribute('role', kind === 'error' ? 'alert' : 'status');
+      p.textContent = msg;
+      form.appendChild(p);
+    };
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+      const body = await res.json().catch(() => ({}));
+
+      if (res.ok && body.ok) {
+        form.reset();
+        if (btn) {
+          btn.textContent = 'Sent — check your email';
+          btn.disabled = true;
+        }
+        showStatus('Thanks — Chef Alecia (or Mark) will reply within one business day.', 'success');
+      } else {
+        if (btn) {
+          btn.disabled = false;
+          btn.textContent = original;
+        }
+        showStatus('Something went wrong. Please email alecia@zimbaliusa.com directly.', 'error');
+      }
+    } catch (err) {
+      if (btn) {
         btn.disabled = false;
-        btn.textContent = 'Send inquiry';
-      }, 2400);
+        btn.textContent = original;
+      }
+      showStatus('Network error. Please email alecia@zimbaliusa.com directly.', 'error');
     }
   });
 }

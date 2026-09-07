@@ -1871,3 +1871,23 @@ a:hover { color: var(--color-primary); }
   .press-outlets { grid-template-columns: 1fr; }
   .steps li { grid-template-columns: 2rem 1fr; gap: var(--space-4); }
 }
+
+/* Booking form status messages */
+.form-status {
+  grid-column: 1 / -1;
+  margin: var(--space-3) 0 0;
+  padding: var(--space-3) var(--space-4);
+  border-radius: 8px;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+.form-status--success {
+  background: #ecf5ed;
+  color: #1f5f2b;
+  border-left: 3px solid #2e7d3d;
+}
+.form-status--error {
+  background: #fbe9e7;
+  color: #8b2c1a;
+  border-left: 3px solid #B54A1E;
+}

@@ -1,0 +1,11 @@
+name = "zimbaliusa-contact"
+main = "src/index.js"
+compatibility_date = "2024-09-01"
+
+[[routes]]
+pattern = "zimbaliusa.com/api/contact"
+zone_name = "zimbaliusa.com"
+
+[[routes]]
+pattern = "www.zimbaliusa.com/api/contact"
+zone_name = "zimbaliusa.com"

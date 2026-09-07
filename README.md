@@ -35,3 +35,7 @@ python3 -m http.server 8000
 ## Deploy
 
 Cloudflare Pages watches the `main` branch. Every push to `main` triggers a production deploy. Pull requests get preview URLs automatically.
+
+## Deployment
+
+Auto-deploys via Cloudflare Pages. Every push to `main` triggers a production build. Every push to any other branch creates a preview URL.

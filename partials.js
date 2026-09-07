@@ -72,7 +72,8 @@ const footerHtml = `
         Private chef and live Jamaican cooking shows in Sarasota, Bradenton, Siesta Key, Longboat Key, Lido Key, Anna Maria Island, Lakewood Ranch, Venice, Osprey, Nokomis, and Palmetto.
       </p>
       <p class="footer-contact">
-        <a href="mailto:alecia@zimbaliusa.com">alecia@zimbaliusa.com</a>
+        <a href="mailto:alecia@zimbaliusa.com">alecia@zimbaliusa.com</a><br />
+        <a href="tel:+19412486368">(941) 248-6368</a>
       </p>
     </div>
     <div class="footer-links">

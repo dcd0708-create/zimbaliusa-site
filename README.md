@@ -2,7 +2,7 @@
 
 Website for Zimbali USA — Chef Alecia Swainbank's Jamaican cooking shows, private chef services, and cooking classes in Sarasota, Bradenton, Siesta Key, and the surrounding Florida Gulf Coast.
 
-**Live site:** [zimbaliusa.pplx.app](https://zimbaliusa.pplx.app) (custom domain `zimbaliusa.com` pending)
+**Live site:** [zimbaliusa.com](https://zimbaliusa.com)
 
 ## Stack
 

@@ -501,13 +501,14 @@ a:hover { color: var(--color-primary); }
   padding-top: var(--space-4);
 }
 .press-strip-label {
-  font-size: 1.05rem;
-  letter-spacing: 0.18em;
+  font-size: 1.35rem;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--color-text);
-  font-weight: 700;
+  font-weight: 800;
   white-space: nowrap;
   flex-shrink: 0;
+  font-family: var(--font-display);
 }
 .press-strip-row-alt .press-strip-label {
   color: var(--color-text-muted);
@@ -537,7 +538,7 @@ a:hover { color: var(--color-primary); }
 }
 @media (max-width: 640px) {
   .press-strip-row { gap: 0.5rem; }
-  .press-strip-label { font-size: 0.75rem; letter-spacing: 0.14em; }
+  .press-strip-label { font-size: 1rem; letter-spacing: 0.16em; }
   .press-strip-marks { gap: 0.35rem 1.1rem; font-size: 0.95rem; }
 }
 
@@ -1941,6 +1942,16 @@ a:hover { color: var(--color-primary); }
   color: rgba(36,25,17,0.6);
   font-style: italic;
 }
+.page-note.page-note-lg {
+  font-size: 1.0625rem;
+  font-style: normal;
+  color: rgba(36,25,17,0.85);
+  padding: var(--space-5);
+  border-left: 3px solid var(--color-accent, #c9782d);
+  background: rgba(201,120,45,0.06);
+  border-radius: 0 8px 8px 0;
+}
+.page-note.page-note-lg strong { color: var(--color-text); }
 
 /* Offer card subtitle (private-chef pricing tiers) */
 .offer-subtitle {

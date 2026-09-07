@@ -56,7 +56,7 @@ const ctaBandHtml = `
 <section class="cta-band" aria-label="Book Chef Alecia">
   <div class="cta-band-inner">
     <p class="eyebrow">Sarasota &middot; Bradenton &middot; Siesta Key &middot; Longboat &middot; Anna Maria</p>
-    <h2 class="cta-band-title">Six guests or thirty. Your kitchen, <em>your date.</em></h2>
+    <h2 class="cta-band-title">Two guests or thirty. Your kitchen, <em>your date.</em></h2>
     <a href="${resolve('/book.html')}" class="btn btn-primary">Check Your Date</a>
   </div>
 </section>

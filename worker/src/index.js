@@ -1,10 +1,21 @@
 // Zimbali USA — booking form handler
 // Receives POST /api/contact, sends via Resend, replies with JSON.
 
-const CORS = {
-  'Access-Control-Allow-Origin': 'https://zimbaliusa.com',
+const ALLOWED_ORIGINS = new Set([
+  'https://zimbaliusa.com',
+  'https://www.zimbaliusa.com',
+]);
+const BASE_CORS = {
   'Access-Control-Allow-Methods': 'POST, OPTIONS',
   'Access-Control-Allow-Headers': 'Content-Type',
+  'Vary': 'Origin',
+};
+const corsFor = (request) => {
+  const origin = request.headers.get('Origin') || '';
+  return {
+    ...BASE_CORS,
+    'Access-Control-Allow-Origin': ALLOWED_ORIGINS.has(origin) ? origin : 'https://zimbaliusa.com',
+  };
 };
 
 const escapeHtml = (s = '') =>
@@ -40,6 +51,7 @@ const buildEmail = (d) => {
 
 export default {
   async fetch(request, env) {
+    const CORS = corsFor(request);
     if (request.method === 'OPTIONS') {
       return new Response(null, { status: 204, headers: CORS });
     }
@@ -103,7 +115,7 @@ export default {
     if (!resendResp.ok) {
       const errBody = await resendResp.text();
       console.error('Resend error:', resendResp.status, errBody);
-      return new Response(JSON.stringify({ ok: false, error: 'send_failed' }), {
+      return new Response(JSON.stringify({ ok: false, error: 'send_failed', debug: { status: resendResp.status, body: errBody.slice(0, 400) } }), {
         status: 502, headers: { ...CORS, 'Content-Type': 'application/json' },
       });
     }

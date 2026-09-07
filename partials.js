@@ -148,19 +148,71 @@ document.addEventListener('DOMContentLoaded', () => {
     );
   }
 
-  // Prevent double-submission on the inquiry form
+  // Wire the inquiry form to the Cloudflare Worker at /api/contact
   const form = document.querySelector('.book-form');
   if (form) {
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
       const btn = form.querySelector('button[type="submit"]');
+      const originalLabel = btn ? btn.textContent : 'Send inquiry';
+
+      // Clear any previous status message
+      let status = form.querySelector('.form-status');
+      if (!status) {
+        status = document.createElement('div');
+        status.className = 'form-status';
+        status.setAttribute('role', 'status');
+        status.setAttribute('aria-live', 'polite');
+        form.appendChild(status);
+      }
+      status.textContent = '';
+      status.classList.remove('is-success', 'is-error');
+
       if (btn) {
         btn.disabled = true;
-        btn.textContent = 'Preview mode — form not wired yet';
-        setTimeout(() => {
+        btn.textContent = 'Sending…';
+      }
+
+      // Collect fields (fall back to empty string so the Worker gets a clean payload)
+      const fd = new FormData(form);
+      const data = Object.fromEntries(fd.entries());
+      // Coerce checkbox to a real boolean (unchecked boxes don't appear in FormData)
+      data.flexible = fd.get('flexible') === 'on';
+
+      try {
+        const res = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data),
+        });
+        const json = await res.json().catch(() => ({}));
+
+        if (res.ok && json.ok) {
+          form.reset();
+          status.classList.add('is-success');
+          status.textContent = 'Thanks — your inquiry is in. Chef Alecia will reply within 24 hours.';
+          if (btn) btn.textContent = 'Sent';
+          setTimeout(() => {
+            if (btn) {
+              btn.disabled = false;
+              btn.textContent = originalLabel;
+            }
+          }, 4000);
+        } else {
+          status.classList.add('is-error');
+          status.textContent = 'Something went wrong sending your inquiry. Please try again or email alecia@zimbaliusa.com.';
+          if (btn) {
+            btn.disabled = false;
+            btn.textContent = originalLabel;
+          }
+        }
+      } catch (err) {
+        status.classList.add('is-error');
+        status.textContent = 'Network error. Please try again or email alecia@zimbaliusa.com.';
+        if (btn) {
           btn.disabled = false;
-          btn.textContent = 'Send inquiry';
-        }, 2400);
+          btn.textContent = originalLabel;
+        }
       }
     });
   }

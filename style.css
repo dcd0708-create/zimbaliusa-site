@@ -1901,12 +1901,14 @@ a:hover { color: var(--color-primary); }
   font-size: 0.9375rem;
   line-height: 1.5;
 }
-.form-status--success {
+.form-status--success,
+.form-status.is-success {
   background: #ecf5ed;
   color: #1f5f2b;
   border-left: 3px solid #2e7d3d;
 }
-.form-status--error {
+.form-status--error,
+.form-status.is-error {
   background: #fbe9e7;
   color: #8b2c1a;
   border-left: 3px solid #B54A1E;

@@ -399,8 +399,8 @@ a:hover { color: var(--color-primary); }
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(20,10,4,0.55) 0%, rgba(20,10,4,0.1) 30%, rgba(20,10,4,0.1) 55%, rgba(20,10,4,0.88) 100%),
-    linear-gradient(90deg, rgba(20,10,4,0.72) 0%, rgba(20,10,4,0.35) 32%, rgba(20,10,4,0) 62%);
+    linear-gradient(180deg, rgba(20,10,4,0.60) 0%, rgba(20,10,4,0.15) 30%, rgba(20,10,4,0.15) 55%, rgba(20,10,4,0.90) 100%),
+    linear-gradient(90deg, rgba(20,10,4,0.86) 0%, rgba(20,10,4,0.60) 22%, rgba(20,10,4,0.28) 45%, rgba(20,10,4,0) 68%);
 }
 .hero-content {
   max-width: var(--content-wide);
@@ -465,11 +465,12 @@ a:hover { color: var(--color-primary); }
 /* Hero tagline (sits above H1) */
 .hero-tagline {
   font-family: var(--font-body);
-  font-size: clamp(0.95rem, 0.85rem + 0.4vw, 1.1rem);
-  line-height: 1.4;
+  font-size: clamp(1.25rem, 1.1rem + 0.7vw, 1.55rem);
+  line-height: 1.35;
   color: #F1C39A;
   letter-spacing: 0.005em;
   margin: 0 0 var(--space-6);
+  text-shadow: 0 1px 12px rgba(20,10,4,0.55);
   max-width: 44ch;
   font-weight: 500;
 }
@@ -737,6 +738,13 @@ a:hover { color: var(--color-primary); }
   font-size: var(--text-base);
   line-height: 1.7;
 }
+.prose-footnote {
+  margin-top: var(--space-4);
+  font-size: 0.82em;
+  line-height: 1.5;
+  color: color-mix(in oklab, var(--color-text-muted) 72%, transparent);
+  font-style: italic;
+}
 
 .grid-2 {
   max-width: var(--content-wide);
@@ -872,6 +880,17 @@ a:hover { color: var(--color-primary); }
 }
 .offering .link-arrow { margin-top: var(--space-3); }
 .offering-primary .link-arrow { color: #F1C39A; }
+.offering-subtitle {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 300;
+  font-size: var(--text-base);
+  line-height: 1.35;
+  color: var(--color-text-muted);
+  margin: 0 0 0.65rem;
+  max-width: 32ch;
+}
+.offering-primary .offering-subtitle { color: #F1C39A; }
 .offering-note {
   display: block;
   margin-top: 0.4rem;

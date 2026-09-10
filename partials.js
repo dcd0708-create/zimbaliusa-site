@@ -67,7 +67,7 @@ const footerHtml = `
 <footer class="site-footer">
   <div class="footer-inner">
     <div class="footer-brand">
-      <p class="footer-name">Zimbali USA <span>— Chef Alecia Swainbank</span></p>
+      <p class="footer-name">Zimbali USA <span>— Chef Alecia</span></p>
       <p class="footer-desc">
         Private chef and live Jamaican cooking shows in Sarasota, Bradenton, Siesta Key, Longboat Key, Lido Key, Anna Maria Island, Lakewood Ranch, Venice, Osprey, Nokomis, and Palmetto.
       </p>

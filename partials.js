@@ -73,7 +73,7 @@ const footerHtml = `
       </p>
       <p class="footer-contact">
         <a href="mailto:alecia@zimbaliusa.com">alecia@zimbaliusa.com</a><br />
-        <a href="tel:+19412486368">(941) 248-6368</a>
+        <a href="tel:+19413155085">(941) 315-5085</a>
       </p>
     </div>
     <div class="footer-links">

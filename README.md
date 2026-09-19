@@ -46,6 +46,8 @@ Every served page contains the complete navigation, footer, CTA (where used),
 email address, and click-to-call phone links without JavaScript. `site.js` only
 enhances navigation, scroll styling, animations, and inquiry-form submission.
 The homepage FAQ must stay identical to its FAQPage JSON-LD.
+Keep the `email_off` comments around public contact links: they prevent
+Cloudflare email obfuscation from making those addresses depend on JavaScript.
 
 ```bash
 python3 -m http.server 8000

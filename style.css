@@ -237,6 +237,28 @@ a:hover { color: var(--color-primary); }
   gap: 0.6rem;
   color: var(--color-text);
 }
+.header-phone {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  justify-self: end;
+  font-size: var(--text-sm);
+  line-height: 1.5;
+  padding: 0.35rem 0;
+  margin-top: calc(-1 * var(--space-8) + 0.25rem);
+  color: var(--color-text);
+}
+.site-header:not(.is-scrolled) .header-phone { color: #fff; }
+.header-phone:hover { text-decoration: underline; }
+.header-phone:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+html:not(.js-enabled) .site-header { position: relative; background: var(--color-surface); }
+html:not(.js-enabled) .site-header .brand,
+html:not(.js-enabled) .site-header .brand-name-accent,
+html:not(.js-enabled) .site-header .nav a,
+html:not(.js-enabled) .site-header .header-phone { color: var(--color-text); }
+@media (max-width: 960px) {
+  html:not(.js-enabled) .mobile-nav[hidden] { display: flex; }
+  html:not(.js-enabled) .nav-toggle { display: none; }
+}
 .site-header:not(.is-scrolled) .brand { color: #fff; }
 .brand-mark {
   width: 34px;

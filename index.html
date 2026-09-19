@@ -31,7 +31,7 @@
 <link rel="preload" as="image" href="images/hero-alecia-plating.jpg" fetchpriority="high" />
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='6' fill='%23241911'/><text x='32' y='47' font-family='Georgia,serif' font-size='44' font-weight='700' text-anchor='middle' fill='%23F1C39A'>Z</text><circle cx='48' cy='46' r='3' fill='%23B54A1E'/></svg>" />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..700,0..100&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="style.css?v=20260906c" />
+<link rel="stylesheet" href="/style.css?v=20260919-seo" />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -109,12 +109,6 @@
             }
           }
         ]
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "reviewCount": "836",
-        "bestRating": "5"
       }
     },
     {
@@ -201,7 +195,26 @@
 </head>
 <body>
 
-<div data-partial="header"></div>
+<!-- partial:header:start -->
+<header class="site-header" id="site-header">
+  <div class="header-inner">
+    <a href="/" class="brand" aria-label="Zimbali USA — Home">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <path d="M8 8 L32 8 L8 32 L32 32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square" stroke-linejoin="miter"/>
+        <circle cx="20" cy="20" r="1.8" fill="currentColor"/>
+      </svg>
+      <span class="brand-name">Zimbali<span class="brand-name-accent">USA</span></span>
+    </a>
+    <a class="header-phone" href="tel:+19413155085">(941) 315-5085</a>
+    <nav class="nav" aria-label="Primary"><a href="/" aria-current="page">Home</a><a href="/cooking-show">Live Cooking Show</a><a href="/private-chef">Private Chef</a><a href="/cooking-classes">Cooking Classes</a><a href="/menus">Menus</a><a href="/about">About</a><a href="/press">Press</a></nav>
+    <a href="/book" class="btn btn-primary btn-sm">Check Your Date</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-nav" id="mobile-nav" hidden><a href="/" aria-current="page">Home</a><a href="/cooking-show">Live Cooking Show</a><a href="/private-chef">Private Chef</a><a href="/cooking-classes">Cooking Classes</a><a href="/menus">Menus</a><a href="/about">About</a><a href="/press">Press</a><a href="/book" class="btn btn-primary">Check Your Date</a></div>
+</header>
+<!-- partial:header:end -->
 
 <!-- ============ HERO ============ -->
 <section class="hero">
@@ -221,7 +234,7 @@
       Invite Chef Alecia into your home for an award-winning five-course Jamaican dinner, cooked right in front of your guests.
     </p>
     <div class="hero-cta">
-      <a href="/book.html" class="btn btn-primary">Check Your Date</a>
+      <a href="/book" class="btn btn-primary">Check Your Date</a>
       <p class="hero-price">From <strong>$200 per guest</strong>, food included</p>
     </div>
   </div>
@@ -260,7 +273,7 @@
     <div class="proof-stats proof-stats-4">
       <div>
         <span class="proof-num">4.8<span class="proof-num-small">/5</span></span>
-        <span class="proof-label"><a href="https://www.tripadvisor.com/Restaurant_Review-g147313-d3907659-Reviews-Zimbali_s_Mountain_Cooking_Studio-Negril_Westmoreland_Parish_Jamaica.html" rel="nofollow noopener" target="_blank">Tripadvisor &middot; 836 reviews</a></span>
+        <span class="proof-label"><a href="https://www.tripadvisor.com/Restaurant_Review-g147313-d3907659-Reviews-Zimbali_s_Mountain_Cooking_Studio-Negril_Westmoreland_Parish_Jamaica" rel="nofollow noopener" target="_blank">Tripadvisor &middot; 836 reviews</a></span>
       </div>
       <div>
         <span class="proof-num">20<span class="proof-num-small">yrs</span></span>
@@ -291,7 +304,7 @@
         <p>Most private chefs work behind a closed door and send the food out. Chef Alecia does the opposite. She lays the ingredients on your counter, cooks in front of you, and tells you where every dish comes from.</p>
         <p>Five courses over about three hours. Somewhere in the middle, people stop being guests and start asking questions.</p>
       </div>
-      <a href="/cooking-show.html" class="link-arrow">See how an evening runs</a>
+      <a href="/cooking-show" class="link-arrow">See how an evening runs</a>
     </div>
     <div class="section-media stack-2">
       <figure class="feature">
@@ -321,7 +334,7 @@
       <p class="offering-desc">Five courses cooked in front of your guests over about three hours, ending with fruit flamb&eacute;. She cooks, she talks, and by the end somebody&rsquo;s holding a spoon. Two guests or thirty.</p>
       <p class="offering-diet">Vegan, vegetarian, gluten-free and allergy guests are welcome and well taken care of.</p>
       <p class="offering-price">From <strong>$200</strong> per guest &middot; $1,200 minimum booking<br /><span class="offering-note">Introductory rate through December 2026.</span></p>
-      <a href="/cooking-show.html" class="link-arrow">Learn more</a>
+      <a href="/cooking-show" class="link-arrow">Learn more</a>
     </article>
     <article class="offering">
       <p class="offering-tag">Quieter</p>
@@ -330,7 +343,7 @@
       <p class="offering-desc">Chef Alecia shops, cooks and cleans up in your kitchen. Four courses for a single evening, or three nights and up with breakfast and lunch handled too. Two to twenty guests.</p>
       <p class="offering-diet">Vegan, vegetarian, gluten-free and allergy guests are welcome and well taken care of.</p>
       <p class="offering-price">One night from <strong>$150</strong> per guest &middot; three nights or more from <strong>$125</strong> per night</p>
-      <a href="/private-chef.html" class="link-arrow">Learn more</a>
+      <a href="/private-chef" class="link-arrow">Learn more</a>
     </article>
     <article class="offering">
       <p class="offering-tag">Hands-on &middot; Lunch</p>
@@ -338,7 +351,7 @@
       <p class="offering-desc">Learn to cook and spice like a Jamaican. Crack a coconut, make the cream, press the juice &mdash; then sit down to a three-course lunch you made yourself. Three hours, 11:00 to 2:00, in your kitchen. Four to ten guests.</p>
       <p class="offering-diet">Vegan, vegetarian, gluten-free and allergy guests are welcome and well taken care of.</p>
       <p class="offering-price">From <strong>$150</strong> per guest &middot; $750 minimum booking</p>
-      <a href="/cooking-classes.html" class="link-arrow">Learn more</a>
+      <a href="/cooking-classes" class="link-arrow">Learn more</a>
     </article>
   </div>
 </section>
@@ -355,7 +368,7 @@
         <p>Vegan, vegetarian, gluten-free and allergy guests are welcome and well taken care of. Five courses of their own, cooked with the same care as everyone else&rsquo;s. She did this for two decades for tables of thirty, and it is not an afterthought.</p>
         <p class="prose-footnote">* Curried goat by request, at additional cost. It takes four hours and it&rsquo;s worth it.</p>
       </div>
-      <a href="/menus.html" class="link-arrow">See the menus</a>
+      <a href="/menus" class="link-arrow">See the menus</a>
     </div>
     <figure class="section-media food-hero">
       <img src="images/signature-pumpkin-soup.jpg"
@@ -394,12 +407,20 @@
         <p>Chef Alecia grew up on a family farm in the Jamaican hills, raised by her grandparents, cooking over woodfire before she cooked over anything else.</p>
         <p>In 2005 she founded Zimbali Retreats in Negril. Its kitchen was ranked #1 in Jamaica on Tripadvisor for ten straight years. Hurricane Melissa ended the Jamaica chapter in October 2025. She landed in Sarasota with the same knives and the same recipes.</p>
       </div>
-      <a href="/about.html" class="link-arrow">Read her story</a>
+      <a href="/about" class="link-arrow">Read her story</a>
     </div>
   </div>
 </section>
 
-<div data-partial="cta"></div>
+<!-- partial:cta:start -->
+<section class="cta-band" aria-label="Book Chef Alecia">
+  <div class="cta-band-inner">
+    <p class="eyebrow">Sarasota &middot; Bradenton &middot; Siesta Key &middot; Longboat &middot; Anna Maria</p>
+    <h2 class="cta-band-title">Two guests or thirty. Your kitchen, <em>your date.</em></h2>
+    <a href="/book" class="btn btn-primary">Check Your Date</a>
+  </div>
+</section>
+<!-- partial:cta:end -->
 
 <!-- ============ TESTIMONIALS ============ -->
 <section class="section testimonials" aria-label="Guest testimonials">
@@ -423,7 +444,7 @@
         <p class="quote-cite">Tripadvisor guest &middot; 2024</p>
       </li>
     </ul>
-    <p class="testimonials-source"><a href="https://www.tripadvisor.com/Restaurant_Review-g147313-d3907659-Reviews-Zimbali_s_Mountain_Cooking_Studio-Negril_Westmoreland_Parish_Jamaica.html" rel="nofollow noopener" target="_blank">Read all 836 reviews on Tripadvisor &rarr;</a></p>
+    <p class="testimonials-source"><a href="https://www.tripadvisor.com/Restaurant_Review-g147313-d3907659-Reviews-Zimbali_s_Mountain_Cooking_Studio-Negril_Westmoreland_Parish_Jamaica" rel="nofollow noopener" target="_blank">Read all 836 reviews on Tripadvisor &rarr;</a></p>
   </div>
 </section>
 
@@ -445,7 +466,31 @@
     <li><span class="press-outlet">Yahoo News</span><span class="press-quote">&ldquo;Eating Your Way Through Negril.&rdquo;</span></li>
   </ul>
   <div class="press-cta">
-    <a href="/press.html" class="link-arrow">See full press coverage</a>
+    <a href="/press" class="link-arrow">See full press coverage</a>
+  </div>
+</section>
+
+<!-- ============ SERVICE AREA ============ -->
+<section class="page-section" aria-labelledby="service-area-title">
+  <div class="section-head">
+    <h2 class="section-title" id="service-area-title">Where we cook</h2>
+  </div>
+  <p>Sarasota, Bradenton, Siesta Key, Longboat Key, Lido Key, Anna Maria Island, Lakewood Ranch, Venice, Osprey, Nokomis, and Palmetto.</p>
+  <p>Free travel within 25 miles of Sarasota; free within 75 miles for parties of ten or more.</p>
+</section>
+
+<!-- ============ VISIBLE FAQ (matches FAQPage JSON-LD) ============ -->
+<section class="page-section" aria-labelledby="home-faq-title">
+  <div class="section-head">
+    <h2 class="section-title" id="home-faq-title">Frequently asked questions</h2>
+  </div>
+  <div class="faq">
+    <details class="faq-item"><summary>What is the live cooking show?</summary><div class="faq-body"><p>Chef Alecia cooks a five-course Jamaican dinner in front of your guests over about three hours, ending with fruit flambé lit at the table. She talks the whole way through — where each dish comes from, why it's made that way — and by the end guests are usually at the counter with a spoon in hand. Two guests or thirty. From $200 per guest, $1,200 minimum booking.</p></div></details>
+    <details class="faq-item"><summary>What areas does Chef Alecia serve?</summary><div class="faq-body"><p>Sarasota, Bradenton, Siesta Key, Longboat Key, Lido Key, Anna Maria Island, Lakewood Ranch, Venice, Osprey, Nokomis, and Palmetto. Free travel within 25 miles of Sarasota, and free anywhere within 75 miles for parties of ten or more — Tampa, St. Pete, Punta Gorda.</p></div></details>
+    <details class="faq-item"><summary>How much does a private chef dinner cost?</summary><div class="faq-body"><p>One evening: $150 per guest for 2-12 guests ($600 minimum), $200 per guest for 13-20 guests. Three nights or more: $125 per guest per night (2-12 guests) or $150 per guest per night (13-20). Add breakfast $45/guest, add lunch $40/guest. All food and fresh-pressed juices included.</p></div></details>
+    <details class="faq-item"><summary>Can you accommodate dietary restrictions?</summary><div class="faq-body"><p>Yes. Vegan, vegetarian, gluten-free and allergy guests are welcome and well taken care of — at no extra charge, and with no separate menu to ask for. Chef Alecia did this for two decades for tables of thirty; it is not an afterthought.</p></div></details>
+    <details class="faq-item"><summary>How do I book a date?</summary><div class="faq-body"><p>Fill out the inquiry form on the site. Chef Alecia (or Mark) will come back within one business day with a menu and quote. 30% deposit holds your date. Balance due 48 hours before, when she shops. PayPal (card or account) or Zelle. Cancel more than seven days out and you're refunded in full. Inside seven days, the deposit is non-refundable. Inside 48 hours, the booking is non-refundable — the food is already bought. Booking inside seven days? The full amount is due at booking, and it's non-refundable for the same reason.</p></div></details>
+    <details class="faq-item"><summary>What about curried goat?</summary><div class="faq-body"><p>Available by request at additional cost. It takes four hours and it's worth it.</p></div></details>
   </div>
 </section>
 
@@ -536,8 +581,55 @@
   </div>
 </section>
 
-<div data-partial="footer"></div>
+<!-- partial:footer:start -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <p class="footer-name">Zimbali USA <span>— Chef Alecia</span></p>
+      <p class="footer-desc">
+        Private chef and live Jamaican cooking shows in Sarasota, Bradenton, Siesta Key, Longboat Key, Lido Key, Anna Maria Island, Lakewood Ranch, Venice, Osprey, Nokomis, and Palmetto.
+      </p>
+      <p class="footer-contact">
+        <a href="mailto:alecia@zimbaliusa.com">alecia@zimbaliusa.com</a><br />
+        <a href="tel:+19413155085">(941) 315-5085</a>
+      </p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <p class="footer-heading">Experiences</p>
+        <a href="/cooking-show">Live Cooking Show</a>
+        <a href="/private-chef">Private Chef</a>
+        <a href="/cooking-classes">Cooking Classes</a>
+        <a href="/menus">Menus</a>
+      </div>
+      <div class="footer-col">
+        <p class="footer-heading">Service Areas</p>
+        <a href="/private-chef/siesta-key">Siesta Key</a>
+        <a href="/private-chef/longboat-key">Longboat Key</a>
+        <a href="/private-chef/anna-maria-island">Anna Maria Island</a>
+        <a href="/private-chef/lakewood-ranch">Lakewood Ranch</a>
+      </div>
+      <div class="footer-col">
+        <p class="footer-heading">Chef Alecia</p>
+        <a href="/about">About</a>
+        <a href="/press">Press</a>
+        <a href="https://www.amazon.com/Forgotten-Wisdoms-Ancient-African-Traditions/dp/B0F2YD5M5Q" rel="noopener" target="_blank">Forgotten Wisdoms (the book)</a>
+      </div>
+      <div class="footer-col">
+        <p class="footer-heading">Elsewhere</p>
+        <a href="https://www.instagram.com/zimbaliretreats/" rel="noopener" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/zimbaliretreatsjamaica" rel="noopener" target="_blank">Facebook</a>
+        <a href="/book">Check Your Date</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-fine">
+    <p>Chef Alecia cooks in your home kitchen. ServSafe certified. Fully insured.</p>
+    <p>&copy; 2026 Zimbali USA</p>
+  </div>
+</footer>
+<!-- partial:footer:end -->
 
-<script src="partials.js?v=20260918-phone"></script>
+<script src="/site.js?v=20260919-seo"></script>
 </body>
 </html>

@@ -28,7 +28,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='6' fill='%23241911'/><text x='32' y='47' font-family='Georgia,serif' font-size='44' font-weight='700' text-anchor='middle' fill='%23F1C39A'>Z</text><circle cx='48' cy='46' r='3' fill='%23B54A1E'/></svg>" />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..700,0..100&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="style.css?v=20260906c" />
+<link rel="stylesheet" href="/style.css?v=20260919-seo" />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -53,7 +53,26 @@
 </head>
 <body>
 
-<div data-partial="header"></div>
+<!-- partial:header:start -->
+<header class="site-header is-scrolled" id="site-header">
+  <div class="header-inner">
+    <a href="/" class="brand" aria-label="Zimbali USA — Home">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <path d="M8 8 L32 8 L8 32 L32 32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square" stroke-linejoin="miter"/>
+        <circle cx="20" cy="20" r="1.8" fill="currentColor"/>
+      </svg>
+      <span class="brand-name">Zimbali<span class="brand-name-accent">USA</span></span>
+    </a>
+    <a class="header-phone" href="tel:+19413155085">(941) 315-5085</a>
+    <nav class="nav" aria-label="Primary"><a href="/">Home</a><a href="/cooking-show">Live Cooking Show</a><a href="/private-chef">Private Chef</a><a href="/cooking-classes">Cooking Classes</a><a href="/menus">Menus</a><a href="/about" aria-current="page">About</a><a href="/press">Press</a></nav>
+    <a href="/book" class="btn btn-primary btn-sm">Check Your Date</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-nav" id="mobile-nav" hidden><a href="/">Home</a><a href="/cooking-show">Live Cooking Show</a><a href="/private-chef">Private Chef</a><a href="/cooking-classes">Cooking Classes</a><a href="/menus">Menus</a><a href="/about" aria-current="page">About</a><a href="/press">Press</a><a href="/book" class="btn btn-primary">Check Your Date</a></div>
+</header>
+<!-- partial:header:end -->
 
 <section class="page-hero">
   <div class="page-hero-inner">
@@ -91,15 +110,70 @@
 
     <p>On October 28th, 2025, Hurricane Melissa changed the island &mdash; and changed the path of Alecia&rsquo;s family with it. They came to Sarasota not knowing what was next, and found a beautiful place and lovely people waiting.</p>
 
-    <p>Now she wants to do what she has always done: <a href="/book.html">cook for people, teach what she knows, and set a table</a>. If you&rsquo;ve found your way to this page, she hopes you&rsquo;ll come hungry and leave a friend.</p>
+    <p>Now she wants to do what she has always done: <a href="/book">cook for people, teach what she knows, and set a table</a>. If you&rsquo;ve found your way to this page, she hopes you&rsquo;ll come hungry and leave a friend.</p>
 
     <p class="about-credentials"><small>Food Handlers Certificate on file. ServSafe certified. Fully insured.</small></p>
 
   </div>
 </section>
 
-<div data-partial="cta"></div>
-<div data-partial="footer"></div>
-<script src="partials.js?v=20260918-phone"></script>
+<!-- partial:cta:start -->
+<section class="cta-band" aria-label="Book Chef Alecia">
+  <div class="cta-band-inner">
+    <p class="eyebrow">Sarasota &middot; Bradenton &middot; Siesta Key &middot; Longboat &middot; Anna Maria</p>
+    <h2 class="cta-band-title">Two guests or thirty. Your kitchen, <em>your date.</em></h2>
+    <a href="/book" class="btn btn-primary">Check Your Date</a>
+  </div>
+</section>
+<!-- partial:cta:end -->
+<!-- partial:footer:start -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <p class="footer-name">Zimbali USA <span>— Chef Alecia</span></p>
+      <p class="footer-desc">
+        Private chef and live Jamaican cooking shows in Sarasota, Bradenton, Siesta Key, Longboat Key, Lido Key, Anna Maria Island, Lakewood Ranch, Venice, Osprey, Nokomis, and Palmetto.
+      </p>
+      <p class="footer-contact">
+        <a href="mailto:alecia@zimbaliusa.com">alecia@zimbaliusa.com</a><br />
+        <a href="tel:+19413155085">(941) 315-5085</a>
+      </p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <p class="footer-heading">Experiences</p>
+        <a href="/cooking-show">Live Cooking Show</a>
+        <a href="/private-chef">Private Chef</a>
+        <a href="/cooking-classes">Cooking Classes</a>
+        <a href="/menus">Menus</a>
+      </div>
+      <div class="footer-col">
+        <p class="footer-heading">Service Areas</p>
+        <a href="/private-chef/siesta-key">Siesta Key</a>
+        <a href="/private-chef/longboat-key">Longboat Key</a>
+        <a href="/private-chef/anna-maria-island">Anna Maria Island</a>
+        <a href="/private-chef/lakewood-ranch">Lakewood Ranch</a>
+      </div>
+      <div class="footer-col">
+        <p class="footer-heading">Chef Alecia</p>
+        <a href="/about">About</a>
+        <a href="/press">Press</a>
+        <a href="https://www.amazon.com/Forgotten-Wisdoms-Ancient-African-Traditions/dp/B0F2YD5M5Q" rel="noopener" target="_blank">Forgotten Wisdoms (the book)</a>
+      </div>
+      <div class="footer-col">
+        <p class="footer-heading">Elsewhere</p>
+        <a href="https://www.instagram.com/zimbaliretreats/" rel="noopener" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/zimbaliretreatsjamaica" rel="noopener" target="_blank">Facebook</a>
+        <a href="/book">Check Your Date</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-fine">
+    <p>Chef Alecia cooks in your home kitchen. ServSafe certified. Fully insured.</p>
+    <p>&copy; 2026 Zimbali USA</p>
+  </div>
+</footer>
+<!-- partial:footer:end -->
+<script src="/site.js?v=20260919-seo"></script>
 </body>
 </html>

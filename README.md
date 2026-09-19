@@ -6,7 +6,8 @@ Website for Zimbali USA — Chef Alecia's Jamaican cooking shows, private chef s
 
 ## Stack
 
-Static HTML/CSS/JS. No build step. Deployed via Cloudflare Pages.
+Static HTML/CSS/JS. No hosting build step. Deployed via Cloudflare Pages.
+Shared HTML is generated locally before commit using Node (no dependencies).
 
 ## Structure
 
@@ -19,13 +20,32 @@ menus.html              Menus
 book.html               Booking form
 about.html              About Chef Alecia
 press.html              Press & recognition
-partials.js             Header, footer, CTA band (shared across pages)
+partials.js             Node-only header, footer, CTA templates
+scripts/inline-partials.cjs  Pre-commit shared-HTML generator
 site.js                 Interactivity
 style.css               Full stylesheet
 images/                 Photography
 ```
 
 ## Local preview
+
+After changing the header, footer, or CTA, edit `partials.js`, then run:
+
+```bash
+node scripts/inline-partials.cjs
+node scripts/inline-partials.cjs --check
+```
+
+Commit both the template and all regenerated HTML files. Do not edit between
+`<!-- partial:NAME:start -->` and `<!-- partial:NAME:end -->` in individual pages:
+the next generator run replaces those blocks. Page-specific content outside
+the blocks is preserved. New pages need `data-page` on the `html` element and
+`<div data-partial="header"></div>` / footer / CTA slots before the first run.
+
+Every served page contains the complete navigation, footer, CTA (where used),
+email address, and click-to-call phone links without JavaScript. `site.js` only
+enhances navigation, scroll styling, animations, and inquiry-form submission.
+The homepage FAQ must stay identical to its FAQPage JSON-LD.
 
 ```bash
 python3 -m http.server 8000

@@ -80,10 +80,7 @@ const footerHtml = `
       </div>
       <div class="footer-col">
         <p class="footer-heading">Service Areas</p>
-        <a href="${resolve('/private-chef/siesta-key')}">Siesta Key</a>
-        <a href="${resolve('/private-chef/longboat-key')}">Longboat Key</a>
-        <a href="${resolve('/private-chef/anna-maria-island')}">Anna Maria Island</a>
-        <a href="${resolve('/private-chef/lakewood-ranch')}">Lakewood Ranch</a>
+        <p class="footer-areas">Serving Sarasota, Bradenton, Siesta Key, Longboat Key, Lido Key, Anna Maria Island, Lakewood Ranch, Venice, Osprey, Nokomis and Palmetto.</p>
       </div>
       <div class="footer-col">
         <p class="footer-heading">Chef Alecia</p>
@@ -100,7 +97,7 @@ const footerHtml = `
     </div>
   </div>
   <div class="footer-fine">
-    <p>Chef Alecia cooks in your home kitchen. ServSafe certified. Fully insured.</p>
+    <p>Chef Alecia cooks in your home kitchen. Food safety certified.</p>
     <p>&copy; 2026 Zimbali USA</p>
   </div>
 </footer>

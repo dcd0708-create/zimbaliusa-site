@@ -1356,6 +1356,12 @@ html:not(.js-enabled) .site-header .header-phone { color: var(--color-text); }
   color: rgba(251, 246, 234, 0.65);
 }
 .footer-col a:hover { color: #F1C39A; }
+.footer-areas {
+  font-size: var(--text-sm);
+  color: rgba(251, 246, 234, 0.65);
+  line-height: 1.55;
+  margin: 0;
+}
 .footer-fine {
   max-width: var(--content-wide);
   margin: var(--space-6) auto 0;
